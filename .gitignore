@@ -1,3 +1,5 @@
 target
+.idea
+hbase-client-test.iml
 src/main/resources/krb5.conf
 src/main/resources/hbase.headless.keytab
