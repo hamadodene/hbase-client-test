@@ -1,0 +1,13 @@
+[libdefaults]
+ default_realm = EXAMPLE.TEST
+ dns_lookup_realm = false
+ dns_lookup_kdc = false
+
+[realms]
+ KRB.SVILUPPO.DNA  = {
+  kdc = kdc.example.test
+}
+
+[domain_realm]
+ .example.test = EXAMPLE.TEST
+ example.test = EXAMPLE.TEST

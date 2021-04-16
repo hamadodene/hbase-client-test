@@ -1,0 +1,12 @@
+hbase.regionserver.kerberos.principal=hbase/_HOST@EXAMPLE.REALM
+hbase.master.kerberos.principal=hbase/_HOST@EXAMPLE.REALM
+hadoop.security.authentication=Kerberos
+hadoop.rpc.protection=authentication
+hbase.rpc.protection=authentication
+hbase.zookeeper.quorum=localhost
+hbase.zookeeper.property.clientPort=2181
+hbase.security.authentication=kerberos
+test.hbase.client.keytab.file=/path/to/keytab
+test.hbase.client.keytab.principal=hbase@EXAMPLE.REALM
+test.java.security.krb5.conf=/path/to/krb5.conf
+fs.default.name=hdfs://hadoopcluster

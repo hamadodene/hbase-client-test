@@ -11,7 +11,7 @@ import java.util.Properties;
 public class ClientTest {
     public static void main(String[] args) throws Exception {
 
-        Properties properties = HbaseClientUtils.getHbaseConfig("src/main/resources/hbase.properties");
+        Properties properties = HbaseClientUtils.getHbaseConfig(System.getProperty("hbase.propertiesFile"));
         Configuration config = HBaseConfiguration.create();
         HbaseClientAuthentication authentication = new HbaseClientAuthentication(true,config,false, properties);
         authentication.login();

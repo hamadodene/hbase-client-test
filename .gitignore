@@ -1,1 +1,3 @@
 target
+src/main/resources/krb5.conf
+src/main/resources/hbase.headless.keytab
